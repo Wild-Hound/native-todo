@@ -27,13 +27,17 @@ export const Rooms = (props) => {
           >
             <Text style={[roomStyle.text]}>{data.name}</Text>
 
-            <View>
-              <Text>Remaining</Text>
-              <Text>{getCount(data.todos, 1)}</Text>
+            <View style={roomStyle.taskInfo}>
+              <Text style={roomStyle.infoText}>Remaining</Text>
+              <Text style={roomStyle.infoNumber}>
+                {getCount(data.todos, 1)}
+              </Text>
             </View>
-            <View>
-              <Text>Completed</Text>
-              <Text>{getCount(data.todos, 2)}</Text>
+            <View style={roomStyle.taskInfo}>
+              <Text style={roomStyle.infoText}>Completed</Text>
+              <Text style={roomStyle.infoNumber}>
+                {getCount(data.todos, 2)}
+              </Text>
             </View>
           </View>
         );
@@ -52,8 +56,24 @@ const roomStyle = StyleSheet.create({
   },
   text: {
     color: "white",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
+    marginBottom: 20,
+  },
+  taskInfo: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10,
+  },
+  infoText: {
+    fontSize: 18,
+    marginBottom: 5,
+    color: "white",
+  },
+  infoNumber: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "white",
   },
 });
 

@@ -38,6 +38,27 @@
                 "completed":"true"
             }
         ]
+    },{
+        "name":"Home Todos",
+        "color": "#f29191",
+        "todos":[
+            {
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"true"
+            }
+        ]
     }
 ]
     
