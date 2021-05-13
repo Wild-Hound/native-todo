@@ -1,0 +1,43 @@
+[
+    {
+        "name":"Home Todos",
+        "color": "#1eae98",
+        "todos":[
+            {
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"true"
+            },{
+                "name":"Take out the dog",
+                "completed":"true"
+            }
+        ]
+    },{
+        "name":"Home Todos",
+        "color": "#a58faa",
+        "todos":[
+            {
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"false"
+            },{
+                "name":"Take out the dog",
+                "completed":"true"
+            }
+        ]
+    }
+]
+    
