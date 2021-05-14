@@ -11,7 +11,7 @@ import { AntDesign } from "@expo/vector-icons";
 import fakeData from "../fakedata.json";
 import { Rooms } from "./Rooms";
 
-export const Home = () => {
+export const Home = (props) => {
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -25,13 +25,13 @@ export const Home = () => {
         <View style={styles2.container}>
           <TouchableOpacity
             style={styles2.addBtn}
-            onPress={() => console.log("clicked!")}
+            onPress={() => props.navigation.navigate("Test")}
           >
             <AntDesign name="plus" size={24} color={colors.blue} />
           </TouchableOpacity>
           <Text style={styles2.addText}>Add Entry</Text>
         </View>
-        <Rooms data={fakeData} />
+        <Rooms data={fakeData} navigation={props.navigation} />
       </View>
     </ScrollView>
   );

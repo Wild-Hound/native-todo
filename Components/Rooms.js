@@ -21,25 +21,27 @@ export const Rooms = (props) => {
     <View style={sectionStyle.wrapper}>
       {props.data?.map((data, index) => {
         return (
-          <View
+          <TouchableOpacity
             key={index}
-            style={[roomStyle.wrapper, { backgroundColor: data.color }]}
+            onPress={() => props.navigation.navigate("View Task")}
           >
-            <Text style={[roomStyle.text]}>{data.name}</Text>
+            <View style={[roomStyle.wrapper, { backgroundColor: data.color }]}>
+              <Text style={[roomStyle.text]}>{data.name}</Text>
 
-            <View style={roomStyle.taskInfo}>
-              <Text style={roomStyle.infoText}>Remaining</Text>
-              <Text style={roomStyle.infoNumber}>
-                {getCount(data.todos, 1)}
-              </Text>
+              <View style={roomStyle.taskInfo}>
+                <Text style={roomStyle.infoText}>Remaining</Text>
+                <Text style={roomStyle.infoNumber}>
+                  {getCount(data.todos, 1)}
+                </Text>
+              </View>
+              <View style={roomStyle.taskInfo}>
+                <Text style={roomStyle.infoText}>Completed</Text>
+                <Text style={roomStyle.infoNumber}>
+                  {getCount(data.todos, 2)}
+                </Text>
+              </View>
             </View>
-            <View style={roomStyle.taskInfo}>
-              <Text style={roomStyle.infoText}>Completed</Text>
-              <Text style={roomStyle.infoNumber}>
-                {getCount(data.todos, 2)}
-              </Text>
-            </View>
-          </View>
+          </TouchableOpacity>
         );
       })}
     </View>
