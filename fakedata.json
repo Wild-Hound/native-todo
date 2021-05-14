@@ -7,13 +7,13 @@
                 "name":"Take out the dog",
                 "completed":"false"
             },{
-                "name":"Take out the dog",
+                "name":"Feed the dog",
                 "completed":"false"
             },{
-                "name":"Take out the dog",
+                "name":"Shower the dog",
                 "completed":"true"
             },{
-                "name":"Take out the dog",
+                "name":"Take the dog to vet",
                 "completed":"true"
             }
         ]

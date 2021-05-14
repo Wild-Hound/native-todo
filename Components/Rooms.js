@@ -7,7 +7,7 @@ export const Rooms = (props) => {
     arr.forEach((data) => x++);
     let completed = 0;
     arr.forEach(
-      (data) => data.completed == "true" && data.completed && completed++
+      (data) => data.completed == "false" && data.completed && completed++
     );
     let remaining = x - completed;
     if (which === 1) {
@@ -23,7 +23,7 @@ export const Rooms = (props) => {
         return (
           <TouchableOpacity
             key={index}
-            onPress={() => props.navigation.navigate("View Task")}
+            onPress={() => props.navigation.navigate("View Task", data)}
           >
             <View style={[roomStyle.wrapper, { backgroundColor: data.color }]}>
               <Text style={[roomStyle.text]}>{data.name}</Text>

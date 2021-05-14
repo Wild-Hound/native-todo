@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Home } from "./Components/Home";
 import { AddEntry } from "./Components/AddEntry";
-import ViewTask from "./Components/ViewTask";
+import { ViewTask } from "./Components/ViewTask";
 
 const Stack = createStackNavigator();
 
